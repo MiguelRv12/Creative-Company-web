@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url(/fonts/Poppins-Bold.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PoppinsRegular';
+  src: url(/fonts/Poppins-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Tipografías */
+  --tipografia1: 'PoppinsRegular', sans-serif;
+  --tipografia2: 'PoppinsBold', sans-serif;
+
+  /* Colores */
+  --color-principal: #FBFBFB;
+  --color-secundario: #333333;
+
+  /* Colores de fondo */
+  --color-fondo-principal: #FBFBFB;
+  --color-fondo-secundario: #515DEF;
+}
+html {
+  font-family: var(--tipografia1), sans-serif;
+  color: var(--color-fondo-principal);
+  background-color: black;
+  /* Text Regular 2 */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+body{
+  width: 1920px;
+  height: 1080px;
+  background-image: url(/img/Mask\ Group@2x.jpg);
+  background-position: top 0 right 0;
+  background-size: 808px 1080px;
+  background-repeat: no-repeat;
+  color: var(--color-principal);
+  margin: 0px;
+
+}
+header{
+  width: 1760px;
+  height: 120px;
+  flex-shrink: 0;
+  background: linear-gradient(to right, var(--color-fondo-secundario) 0, var(--color-fondo-secundario) 1112px, rgba(255, 255, 255, 0) 1112px, rgba(255, 255, 255, 0) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+
+}
+header img{
+  width: 92px;
+  height: 54px;
+  margin-top: 33px;
+  margin-left: 160px;
+}
+
+nav{
+  width: 497px;
+  height: 27px;
+  margin-top: 46px;
+  margin-left: 148px;
+  display: flex-start;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 56px;
+  color: var(--color-principal);
+  padding: 0px;
+}
+
+ul{
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-start;
+  gap: 56px;
+  margin: 0px;
+}
+nav ul a{
+  text-decoration: none;
+  color: var(--color-principal);
+}
+
+header button{
+  border: 1px solid var(--color-fondo-secundario);
+  background: var(--color-fondo-secundario);
+  display: flex;
+  width: 149px;
+  height: 60px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 30px;
+  margin-left: 651px;
+  color: var(--color-principal);
+
+}
+
+div.hero{
+  width: 1112px;
+  flex-shrink: 0;
+  background-color: var(--color-fondo-secundario);
+  padding-top: 40px;
+  padding-bottom: 81px;
+}
+
+div.hero p.pretexto{
+  font-size: 24px;
+  margin-left: 160px;
+  margin-top: 0px; 
+}
+
+
+div.hero h1{
+  width: 864px;
+  margin: 0px;
+  /* Title/Heading 1 */
+  font-family: var(--tipografia2), sans-serif;
+  font-size: 64px;
+  line-height: 80px; 
+  margin-left: 160px;
+  margin-top: 16px;
+}
+
+div.hero p.Subtitulo{
+  margin-top: 8px;
+  width: 784px;
+  font-size: 24px;
+  line-height: 40px; 
+  margin-left: 160px;
+  margin-top: 32px;
+}
+
+div.hero button{
+  display: flex;
+  width: 299px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--tipografia1);
+  font-size: 24px;
+  color: var(--color-secundario);
+  background-color: var(--color-fondo-principal);
+  margin-left: 160px;
+  margin-top: 54px;
+}
+
+div.hero button img{
+  width: 48px;
+  height: 48px;
+}
+
+
+section{
+  width: 1352px;
+  height: 297px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 80px;
+  background-color: var(--color-fondo-principal);
+  margin-left: -97px;
+}
+
+section article{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 60px;
+  width: 328px;
+  height: 150px;
+}
+section article:first-of-type{
+  margin-left: 173px;
+}
+article img{
+  margin: 0px;
+  width: 64px;
+  height: 64px;
+}
+
+article h2{
+  margin-top: 24px;
+  color: var(--color-secundario);
+  font-family: var(--tipografia2), sans-serif;
+  font-size: 18px;
+}
+
+article p{
+  margin: 0px;
+  color: #909090;
+  font-family: var(--tipografia1), sans-serif;
+  font-size: 18px;
+}
